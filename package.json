@@ -1,8 +1,8 @@
 {
   "name": "shike",
   "type": "module",
-  "version": "0.0.0-alpha.0",
-  "description": "date format util",
+  "version": "0.0.1",
+  "description": "Zero dependency & pure date-time formatting library, nothing redundant.",
   "author": "Viki <hi@viki.moe> (https://github.com/vikiboss)",
   "license": "MIT",
   "main": "./dist/index.cjs",
@@ -14,15 +14,27 @@
     }
   },
   "keywords": [
-    "awesome-package"
+    "date",
+    "time",
+    "date-format",
+    "time-format",
+    "formatter",
+    "typescript"
   ],
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "unbuild"
+    "build": "unbuild",
+    "prerelease": "build",
+    "release": "npm publish"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
-    "unbuild": "^2.0.0"
+    "unbuild": "^2.0.0",
+    "typescript": "^5.4.5"
   }
 }
