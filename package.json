@@ -1,6 +1,7 @@
 {
   "name": "shike",
   "type": "module",
+  "version": "0.0.0-alpha.0",
   "description": "date format util",
   "author": "Viki <hi@viki.moe> (https://github.com/vikiboss)",
   "license": "MIT",
